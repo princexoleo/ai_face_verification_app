@@ -2,7 +2,7 @@
 
 Image based face verification system for Robi Biometric Verification.
 
-![AI Face Verification Interface](path/to/screenshot.png)
+![AI Face Verification Interface](https://github.com/princexoleo/ai_face_verification_app/blob/main/res/project_over_view_1.jpeg)
 
 ## Features
 - Face detection and verification

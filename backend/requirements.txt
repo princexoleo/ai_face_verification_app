@@ -1,0 +1,11 @@
+fastapi
+python-multipart
+uvicorn
+numpy
+opencv-contrib-python
+face-recognition
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+cmake
+dlib

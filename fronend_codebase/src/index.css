@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-dark;
+  }
+}
+
+@layer components {
+  .bg-cyber-dark {
+    background-color: theme('colors.cyber.dark');
+  }
+  
+  .text-cyber-blue {
+    color: theme('colors.cyber.blue');
+  }
+  
+  .text-cyber-purple {
+    color: theme('colors.cyber.purple');
+  }
+  
+  .border-cyber-blue {
+    border-color: theme('colors.cyber.blue');
+  }
+}
+
+@layer utilities {
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 8s linear infinite;
+  }
+  
+  .bg-gradient-cyber {
+    background-image: linear-gradient(
+      to right,
+      theme('colors.cyber.blue'),
+      theme('colors.cyber.purple')
+    );
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: theme('colors.cyber.dark');
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
